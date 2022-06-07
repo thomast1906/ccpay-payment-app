@@ -207,6 +207,7 @@ public class ServiceRequestFunctionalTests {
         assertThat(getPaymentGroupResponse.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND.value());
         assertThat(getPaymentGroupResponse.getBody().asString())
             .isEqualTo("No Service found for given CaseType or HMCTS Org Id");
+
     }
 
     @Test
