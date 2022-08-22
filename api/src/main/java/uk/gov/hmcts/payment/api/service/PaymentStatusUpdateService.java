@@ -19,6 +19,8 @@ public interface PaymentStatusUpdateService {
 
     PaymentFailures updatePaymentFailure(String paymentFailures, PaymentStatusUpdateSecond paymentStatusUpdateSecond);
 
+    void updateUnprocessedPayment();
+
     PaymentFailures unprocessedPayment(UnprocessedPayment unprocessedPayment,
                                        MultiValueMap<String, String> headers);
 }
